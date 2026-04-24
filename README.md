@@ -2,7 +2,7 @@
 
 An [Obsidian](https://obsidian.md) plugin that renders a **directed, weighted graph** of your notes — built for the cases where a plain link isn't enough and you want to express *how strongly* one note connects to another.
 
-![Weighted Graph screenshot](https://raw.githubusercontent.com/jamesms36/obsidian-weighted-graph/main/screenshot.png)
+![Weighted Graph screenshot](screenshot.png)
 
 ## How it works
 
