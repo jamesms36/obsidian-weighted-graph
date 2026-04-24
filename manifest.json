@@ -1,0 +1,10 @@
+{
+  "id": "obsidian-weighted-graph",
+  "name": "Weighted Graph",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "Directed weighted graph visualization from [[Note]]::weight syntax",
+  "author": "James Sanders",
+  "authorUrl": "https://github.com/jamesms36",
+  "isDesktopOnly": false
+}

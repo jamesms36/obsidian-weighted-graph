@@ -1,0 +1,197 @@
+.wg-view-content {
+  padding: 0 !important;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Filter bar ─────────────────────────────────────────────────────────── */
+
+.wg-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.wg-toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.wg-toggle-label input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.wg-filter-divider {
+  width: 1px;
+  height: 18px;
+  background: var(--background-modifier-border);
+  flex-shrink: 0;
+}
+
+.wg-filter-section {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.wg-filter-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.wg-filter-input {
+  font-size: 12px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  color: var(--text-normal);
+  width: 140px;
+}
+
+.wg-filter-add-btn {
+  font-size: 12px;
+  padding: 2px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+  cursor: pointer;
+}
+
+.wg-filter-add-btn:hover {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+}
+
+/* ── Filter pills ───────────────────────────────────────────────────────── */
+
+.wg-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.wg-pill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 4px 2px 8px;
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-radius: 20px;
+  font-size: 11px;
+}
+
+.wg-pill-remove {
+  background: none;
+  border: none;
+  color: var(--text-on-accent);
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0 2px;
+  line-height: 1;
+  opacity: 0.75;
+}
+
+.wg-pill-remove:hover {
+  opacity: 1;
+}
+
+/* ── Graph area ─────────────────────────────────────────────────────────── */
+
+.wg-graph-area {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.wg-graph-area svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.wg-empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-faint);
+  font-size: 14px;
+}
+
+/* ── Controls overlay ───────────────────────────────────────────────────── */
+
+.wg-controls {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 10;
+}
+
+.wg-controls button {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-muted);
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.wg-controls button:hover {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+/* ── Legend ─────────────────────────────────────────────────────────────── */
+
+.wg-legend {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.wg-legend-label {
+  font-size: 10px;
+  color: var(--text-faint);
+}
+
+.wg-legend-bar {
+  width: 140px;
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(to right, #8b1a1a, #5a5a8a, #1a7a1a);
+}
+
+.wg-legend-ticks {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  font-size: 9px;
+  color: var(--text-faint);
+}
